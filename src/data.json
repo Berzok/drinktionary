@@ -1,0 +1,1259 @@
+[
+  {
+    "name": "Bad Touch",
+    "icon": "icons/badtouch_icon.webp",
+    "image": "badtouch.webp",
+    "citation": "Aussi plaisant qu'un toucher rectal, mais beaucoup plus vert.",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "quantity": "1",
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Pernod",
+        "quantity": "0.5",
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Curaçao bleu",
+        "quantity": "1",
+        "unit": "goutte",
+        "karmotrine": true
+      },
+      {
+        "name": "Sirop de sucre",
+        "quantity": "0.25",
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de lime",
+        "quantity": "0.5",
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de citron",
+        "quantity": "0.75",
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Eau",
+        "quantity": "1.5",
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 0,
+        "instruction": "Placer tous les ingrédients à l'exception du tonique dans un shaker rempli de glace."
+      },
+      {
+        "order": 1,
+        "instruction": "Fermer le shaker et agiter vigoureusement. Filtrer dans le verre, en ajoutant de la glace si voulu."
+      },
+      {
+        "order": 2,
+        "instruction": "Compléter la boisson avec le tonique, et mélanger à la cuillère."
+      }
+    ]
+  },
+  {
+    "name": "Beer",
+    "icon": "icons/beer_icon.webp",
+    "image": "beer.webp",
+    "ingredients": [
+      {
+        "name": "Whisky (houblonné)",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Prosecco",
+        "quantity": 4,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Soda de Malte",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Placer tous les ingrédients dans un verre rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Remuer gentiment et servir une fois les éléments combinés."
+      }
+    ]
+  },
+  {
+    "name": "Bleeding Jane",
+    "icon": "icons/bleedingjane_icon.webp",
+    "image": "bleedingjane.webp",
+    "ingredients": [
+      {
+        "name": "Jus de légume",
+        "quantity": 6,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Raifort",
+        "quantity": 0.5,
+        "unit": "cuillère à café",
+        "karmotrine": false
+      },
+      {
+        "name": "Ketchup",
+        "quantity": 1,
+        "unit": "cuillère à café",
+        "karmotrine": false
+      },
+      {
+        "name": "Sauce piquante",
+        "quantity": 1,
+        "unit": "goutte",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de citron",
+        "quantity": 1,
+        "unit": "cuillère à café",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de cornichons",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Sel & Poivre",
+        "quantity": "Au choix",
+        "unit": "",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Placer tous les ingrédients dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigourseuement, verser en ajoutant de la glace si désiré."
+      },
+      {
+        "order": 3,
+        "instruction": "Servir avec le sourire."
+      }
+    ]
+  },
+  {
+    "name": "Bloom Light",
+    "icon": "icons/bloomlight_icon.webp",
+    "image": "bloomlight.webp",
+    "ingredients": [
+      {
+        "name": "Whisky à la canelle",
+        "quantity": 1.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "RumChata",
+        "quantity": 1.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Soda de Malte",
+        "quantity": 1.5,
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Ajouter le whisky et le rhum dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement, et verser sans filter dans le verre."
+      },
+      {
+        "order": 3,
+        "instruction": "Compléter avec le Soda de Malte et remuer gentiment avant de servir."
+      }
+    ]
+  },
+  {
+    "name": "Blue Fairy",
+    "icon": "icons/bluefairy_icon.webp",
+    "image": "bluefairy.webp",
+    "citation": "Comme de l'eau, mais définitivement bien plus cher.",
+    "ingredients": [
+      {
+        "name": "Pernod",
+        "quantity": "1",
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Curaçao bleu",
+        "quantity": "1",
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Jus de citron",
+        "quantity": "1",
+        "unit": "oz"
+      },
+      {
+        "name": "Eau",
+        "quantity": "2",
+        "unit": "oz"
+      }
+    ],
+    "instructions": [
+      {
+        "order": 0,
+        "instruction": "Ajouter tous les ingrédients dans un shaker rempli de glace."
+      },
+      {
+        "order": 1,
+        "instruction": "Fermer le shaker et agiter vigoureusement. Filtrer dans le verre, en ajoutant de la glace si voulu."
+      },
+      {
+        "order": 2,
+        "instruction": "Pour la version non-alcoolisé, infuser l'anis étoilé dans de l'eau chaude pendant 10 minutes avant de retirer les graines. Laisser refroidir."
+      },
+      {
+        "order": 3,
+        "instruction": "Une fois refroidi, ajouter 2 onces du thé d'anis avec du sirop de sucre, du jus de lime, du colorant bleu et de l'eau dans un shaker rempli de glace, et reprendre à l'étape 2."
+      }
+    ]
+  },
+  {
+    "name": "Brandtini",
+    "citation": "HAHAHAH",
+    "icon": "icons/brandtini_icon.png",
+    "image": "brandtini.webp",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "quantity": 0.75,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Gin",
+        "quantity": 0.75,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Triple sec",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Sirop de sucre",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de lime",
+        "quantity": 0.75,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus d'orange",
+        "quantity": 0.75,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de cranberry",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Ajouter tous les ingrédients dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Remuer vigoureusement."
+      },
+      {
+        "order": 3,
+        "instruction": "Verser le mélange dans le verre et servir."
+      }
+    ]
+  },
+  {
+    "name": "Cobalt Velvet",
+    "icon": "icons/cobaltvelvet_icon.webp",
+    "image": "cobaltvelvet.webp",
+    "ingredients": [
+      {
+        "name": "Gin",
+        "quantity": 1.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Jus de lime",
+        "quantity": 0.75,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Prosecco",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Voltage soda",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Eau pétillante",
+        "quantity": 1,
+        "unit": "goutte",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Ajouter le gin et le jus de lime dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement."
+      },
+      {
+        "order": 3,
+        "instruction": "Verser le mélange dans un verre et ajouter de la glace si souhaité."
+      },
+      {
+        "order": 4,
+        "instruction": "Compléter avec les ingrédients restants et mélanger pour les combiner."
+      }
+    ]
+  },
+  {
+    "name": "Crevice Spike",
+    "icon": "icons/crevicespike_icon.webp",
+    "image": "crevicespike.webp",
+    "ingredients": [
+      {
+        "name": "Rhum blanc",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Liqueur de melon",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Jus de citron",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Bière au gingembre",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Sauce piquante",
+        "quantity": 1,
+        "unit": "extrait",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Ajouter les 4 premiers ingrédients dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Mettre la sauce piquante au fond du verre. Verser le contenu du shaker dans le verre, en ajoutant de la glace si désiré. Compléter avec la bière au gingembre, et doucement remuer."
+      },
+      {
+        "order": 3,
+        "instruction": "Pour la version non-alcoolisée, mélanger de préférence le tout dans un verre rempli de glace."
+      }
+    ]
+  },
+  {
+    "name": "Fluffy Dream",
+    "icon": "icons/fluffydream_icon.webp",
+    "image": "fluffydream.webp",
+    "ingredients": [
+      {
+        "name": "Rhum blanc",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Curaçao bleu",
+        "quantity": 1,
+        "unit": "goutte",
+        "karmotrine": true
+      },
+      {
+        "name": "Liqueur de melon",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Velvet Falernum",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Sirop de sucre",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de lime",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus d'ananas",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Ajouter tous les ingrédients dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement. Verser dans le verre, ajouter de la glace si désiré. Garnir avec de la peau de lime et une rondelle de lime."
+      },
+      {
+        "order": 3,
+        "instruction": "Mélanger de préférence la version non-alcoolisée dans un verre rempli de glace."
+      }
+    ]
+  },
+  {
+    "name": "Fringe Weaver",
+    "icon": "icons/fringeweaver_icon.webp",
+    "image": "fringeweaver.webp",
+    "ingredients": [
+      {
+        "name": "Bourbon",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Vermouth",
+        "quantity": 0.25,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Jus de pomme",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Amers",
+        "quantity": 2,
+        "unit": "extraits",
+        "karmotrine": false
+      },
+      {
+        "name": "Sucre",
+        "quantity": 1,
+        "unit": "carré",
+        "karmotrine": false
+      },
+      {
+        "name": "Eau pétillante",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Placer un cube de sucre au fond du verre et ajouter deux extraits d'amers avec d'écraser le tout avec une cuillère  ."
+      },
+      {
+        "order": 2,
+        "instruction": "Mettre le bourbon, le vermouth et le jus de pomme dans un shaker rempli de glace."
+      },
+      {
+        "order": 3,
+        "instruction": "Agiter vigoureusement le shaker. Verser dans le verre."
+      },
+      {
+        "order": 4,
+        "instruction": "Compléter avec les 2 onces d'eau pétillante et garnir d'une peau de citron."
+      }
+    ]
+  },
+  {
+    "name": "Grizzly Temple",
+    "icon": "icons/grizzlytemple_icon.webp",
+    "image": "grizzly_temple.webp",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Crème de menthe",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de lime",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Bière au gingembre",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Menthe",
+        "quantity": 1,
+        "unit": "garniture",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Placer la vodka, la crème de menthe et le jus de lime dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement et verser, en ajoutant de la glace si souhaité."
+      },
+      {
+        "order": 3,
+        "instruction": "Compléter avec la bière de gingembre et garnir avec la feuille de menthe."
+      }
+    ]
+  },
+  {
+    "name": "Gut Punch",
+    "icon": "icons/gutpunch_icon.webp",
+    "image": "gutpunch.webp",
+    "ingredients": [
+      {
+        "name": "Whisky",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Jus d'orange",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Eau tonique",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Ajouter les deux premiers ingrédients dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement, verser et ajouter de glace si souhaité."
+      },
+      {
+        "order": 3,
+        "instruction": "Compléter avec l'eau tonique et remuer gentiment."
+      }
+    ]
+  },
+  {
+    "name": "Marsblast",
+    "icon": "icons/marsblast_icon.webp",
+    "image": "marsblast.webp",
+    "ingredients": [
+      {
+        "name": "Tequila",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Jus de citron",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus d'orange",
+        "quantity": 3,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Amers",
+        "quantity": 2,
+        "unit": "extraits",
+        "karmotrine": false
+      },
+      {
+        "name": "Sauce piquante",
+        "quantity": "1/4",
+        "unit": "cuillère à café",
+        "karmotrine": false
+      },
+      {
+        "name": "Eau tonique",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Ajouter tous les ingrédients à l'exception de l'eau tonique dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement, verser et ajouter des glaçons si désiré."
+      },
+      {
+        "order": 3,
+        "instruction": "Compléter avec l'eau tonique et remuer gentiment avant de servir."
+      }
+    ]
+  },
+  {
+    "name": "Mercuryblast",
+    "icon": "icons/mercuryblast_icon.webp",
+    "image": "mercuryblast.webp",
+    "ingredients": [
+      {
+        "name": "Whisky à la canelle",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Curaçao bleu",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Jus de citron",
+        "quantity": 0.75,
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Placer tous les ingrédients dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement."
+      },
+      {
+        "order": 3,
+        "instruction": "Verser dans le verre, ajouter de la glace au souhait. Il y a normalement de quoi faire 2 shots."
+      }
+    ]
+  },
+  {
+    "name": "Moonblast",
+    "icon": "icons/moonblast_icon.webp",
+    "image": "moonblast.webp",
+    "ingredients": [
+      {
+        "name": "Rhum blanc",
+        "quantity": 1.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Curaçao bleu",
+        "quantity": 1,
+        "unit": "goutte",
+        "karmotrine": true
+      },
+      {
+        "name": "Sirop de sucre",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de grenade",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus d'ananas",
+        "quantity": 0.25,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Eau pétillante",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Placer tous les ingrédients à l'exception de l'eau pétillante dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement, puis verser en ajoutant de la glace si désiré."
+      },
+      {
+        "order": 3,
+        "instruction": "Compléter avec l'eau pétillante et remuer gentiment avant de servir."
+      }
+    ]
+  },
+  {
+    "name": "Piano Man",
+    "icon": "icons/pianoman_icon.webp",
+    "image": "pianoman.webp",
+    "ingredients": [
+      {
+        "name": "Tequila",
+        "quantity": 1.25,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Curaçao bleu",
+        "quantity": 0.25,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Liqueur de violette",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Sirop de sucre",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de lime",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Eau",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Ajouter tous les ingrédients dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement, verser en ajoutant de glace si souhaité."
+      },
+      {
+        "order": 3,
+        "instruction": "Garnir avec de la myrtille si possible."
+      }
+    ]
+  },
+  {
+    "name": "Piano Woman",
+    "icon": "icons/pianowoman_icon.webp",
+    "image": "pianowoman.webp",
+    "ingredients": [
+      {
+        "name": "Rhum noir",
+        "quantity": 0.75,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Curaçao bleu",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Liqueur de violette",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Sirop de sucre",
+        "quantity": 0.75,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de lime",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Eau tonique",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Ajouter tous les ingrédients dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement, verser et rajouter de la glace si souhaité."
+      },
+      {
+        "order": 3,
+        "instruction": "Compléter avec l'eau tonique et remuer gentiment avant de servir."
+      }
+    ]
+  },
+  {
+    "name": "Piledriver",
+    "icon": "icons/piledriver_icon.webp",
+    "image": "piledriver.webp",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "quantity": 1.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Triple sec",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Jus d'orange",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Amers",
+        "quantity": 4,
+        "unit": "extraits",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Placer tous les ingrédients dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement, verser et ajouter de la glace si voulu."
+      },
+      {
+        "order": 3,
+        "instruction": "Garnir d'une écorce d'orange et servir avec le sourire."
+      }
+    ]
+  },
+  {
+    "name": "Sparkle Star",
+    "icon": "icons/sparklestar_icon.webp",
+    "image": "sparklestar.webp",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Sirop de sucre",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de lime",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de cranberry",
+        "quantity": 3,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Blanc d'oeuf",
+        "quantity": 1,
+        "unit": "",
+        "karmotrine": false
+      },
+      {
+        "name": "Paillettes comestibles",
+        "quantity": "",
+        "unit": "(optionel)",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Placer tous les ingrédients dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement, et verser sans filtrer."
+      },
+      {
+        "order": 3,
+        "instruction": "Garnir d'une carambole."
+      }
+    ]
+  },
+  {
+    "name": "Sugar Rush",
+    "icon": "icons/sugarrush_icon.webp",
+    "image": "sugarrush.webp",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "quantity": 1.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Sirop de sucre",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de grenade",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus d'ananas",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Placer tous les ingrédients dans un shaker rempli de glace. Mettre de côté le seltzer dans le cas de la version non-alcoolique."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement, verser en ajoutant de la glace si désiré. Pour la version KF, compléter avec le Seltzer et remuer avant de servir."
+      }
+    ]
+  },
+  {
+    "name": "Sunshine Cloud",
+    "icon": "icons/sunshinecloud_icon.webp",
+    "image": "sunshinecloud.webp",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "quantity": 1.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Crème de cacao",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Bourbon",
+        "quantity": 1,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Amers",
+        "quantity": 3,
+        "unit": "extraits",
+        "karmotrine": false
+      },
+      {
+        "name": "Lait entier",
+        "quantity": 2.5,
+        "unit": "oz",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Placer tous les ingrédients dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement, puis verser sans filtrer."
+      },
+      {
+        "order": 3,
+        "instruction": "Si souhaité, ajouter de la glace avant de servir."
+      },
+      {
+        "order": 4,
+        "instruction": "Compléter avec les 2 onces d'eau pétillante et garnir d'une peau de citron."
+      }
+    ]
+  },
+  {
+    "name": "Suplex",
+    "icon": "icons/suplex_icon.webp",
+    "image": "suplex.webp",
+    "ingredients": [
+      {
+        "name": "Vodka",
+        "quantity": 1.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Apérol",
+        "quantity": 0.5,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Jus d'orange",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Amers",
+        "quantity": 8,
+        "unit": "extraits",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Placer tous les ingrédients dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement, verser en ajoutant de la glace si voulu."
+      },
+      {
+        "order": 3,
+        "instruction": "Garnir avec une écorce d'orange et un parasol."
+      }
+    ]
+  },
+  {
+    "name": "Zen Star",
+    "icon": "icons/zenstar_icon.webp",
+    "image": "zenstar.webp",
+    "ingredients": [
+      {
+        "name": "Sake",
+        "quantity": 3,
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Thé vert glacé",
+        "quantity": 6,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Sirop de sucre",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Jus de citron",
+        "quantity": 2,
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Lait entier",
+        "quantity": "79",
+        "unit": "mL",
+        "karmotrine": false
+      },
+      {
+        "name": "Poudre de pois papillons bleus",
+        "quantity": "1/4",
+        "unit": "cuillère à café",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Combiner les 4 premiers ingrédients, et verser le mélange dans un récipient contenant le lait. Ne pas remuer ni agiter la mixture, et laisser reposer 1 heure."
+      },
+      {
+        "order": 2,
+        "instruction": "Filtrer le tout dans un nouveau récipient, et laisser reposer 1 heure, ou la nuit au réfrigérateur."
+      },
+      {
+        "order": 3,
+        "instruction": "Mélanger la poudre de pois bleus et remuer. Servir on the rocks et savourer."
+      }
+    ]
+  },
+  {
+    "name": "Flaming Moai",
+    "icon": "icons/flamingmoai_icon.webp",
+    "image": "flamingmoai.webp",
+    "ingredients": [
+      {
+        "name": "Rhum noir",
+        "quantity": "1",
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Velvet Falernum",
+        "quantity": "0.5",
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Aperol",
+        "quantity": "0.25",
+        "unit": "oz",
+        "karmotrine": true
+      },
+      {
+        "name": "Jus de lime",
+        "quantity": "0.5",
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Bière au gingembre",
+        "quantity": "1",
+        "unit": "oz",
+        "karmotrine": false
+      },
+      {
+        "name": "Eau pétillante",
+        "quantity": "1",
+        "unit": "doigt",
+        "karmotrine": false
+      }
+    ],
+    "instructions": [
+      {
+        "order": 1,
+        "instruction": "Placer tous les ingrédients à l'exception de la bière au gingembre et de l'eau pétillante dans un shaker rempli de glace."
+      },
+      {
+        "order": 2,
+        "instruction": "Agiter vigoureusement, et verser en ajoutant de la glace si souhaité."
+      },
+      {
+        "order": 3,
+        "instruction": "Remuer en ajoutant la bière au gingembre et l'eau pétillante."
+      }
+    ]
+  }
+]

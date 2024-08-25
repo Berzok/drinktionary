@@ -1,0 +1,7 @@
+{
+  "name": "drinktionary",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
