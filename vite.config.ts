@@ -1,23 +1,27 @@
-/// <reference types="vitest" />
+import legacy from '@vitejs/plugin-legacy';
+import vue from '@vitejs/plugin-vue';
+import path from 'path';
+import { defineConfig, loadEnv } from 'vite';
 
-import legacy from '@vitejs/plugin-legacy'
-import vue from '@vitejs/plugin-vue'
-import path from 'path'
-import { defineConfig } from 'vite'
+process.env = {...process.env, ...loadEnv('development', process.cwd())};
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    legacy()
-  ],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
+    define: {
+        'process.env': process.env,
+        'APP_VERSION': JSON.stringify(process.env.npm_package_version),
     },
-  },
-  test: {
-    globals: true,
-    environment: 'jsdom'
-  }
+    plugins: [
+        vue(),
+        legacy()
+    ],
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, './src'),
+        },
+    },
+    test: {
+        globals: true,
+        environment: 'jsdom'
+    }
 })

@@ -15,5 +15,4 @@
 import { IonButtons, IonHeader, IonMenuButton, IonToolbar } from '@ionic/vue';
 </script>
 
-<style scoped>
-</style>
+<style scoped />

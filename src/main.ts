@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
+import configureHTTPInterceptor from './config/configureHTTPInterceptor';
 
 import { IonicVue } from '@ionic/vue';
 
@@ -21,7 +22,6 @@ import '@ionic/vue/css/flex-utils.css';
 import '@ionic/vue/css/display.css';
 
 import 'aesthetic-css/aesthetic.css';
-import './assets/vaporwave.scss';
 
 /**
  * Ionic Dark Mode
@@ -36,19 +36,26 @@ import '@ionic/vue/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import { createPinia } from 'pinia';
+import { useDrinkStore } from '@/store/drinkStore';
 
 if (import.meta.hot) {
-  import.meta.hot.on(
-      "vite:beforeUpdate",
-      /* eslint-disable-next-line no-console */
-      () => console.clear()
-  );
+    import.meta.hot.on(
+        "vite:beforeUpdate",
+        /* eslint-disable-next-line no-console */
+        () => console.clear()
+    );
 }
 
+const pinia = createPinia();
+configureHTTPInterceptor();
+
 const app = createApp(App)
-  .use(IonicVue)
-  .use(router);
+    .use(IonicVue)
+    .use(router)
+    .use(pinia);
 
 router.isReady().then(() => {
-  app.mount('#app');
+    app.mount('#app');
 });
+useDrinkStore().init();

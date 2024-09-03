@@ -18,6 +18,4 @@ import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonTitle, Io
 </script>
 
 
-<style scoped>
-
-</style>
+<style scoped />
