@@ -21,7 +21,7 @@ export const useDrinkStore = defineStore('data', {
         },
         async init(): Promise<void> {
             const items = await drinkService.getAll();
-            this.$state.drinks = items.sort((a: any, b: any) => {
+            this.$state.drinks = items.toSorted((a: any, b: any) => {
                 return a.name.localeCompare(b.name);
             }) as any;
         }
