@@ -13,7 +13,6 @@ export const useDrinkStore = defineStore('data', {
         async fetchDrinks() {
             try {
                 const response = await drinkService.getAll();
-                console.dir('haha');
                 this.drinks = response as [];
             } catch (error) {
                 console.error(error);

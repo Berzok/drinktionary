@@ -18,7 +18,7 @@
 </template>
 
 <script setup lang="ts">
-import { IonApp, IonContent, IonRouterOutlet, } from '@ionic/vue';
+import { IonApp, IonContent, IonFooter, IonRouterOutlet, IonTitle, IonToolbar } from '@ionic/vue';
 import ApplicationHeader from '@/views/Navigation/ApplicationHeader.vue';
 import LoadingSpinner from '@/views/LoadingSpinner.vue';
 

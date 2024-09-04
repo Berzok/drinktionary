@@ -21,7 +21,6 @@ function requestErrorHandler(error: any) {
 
 function responseHandler(response: AxiosResponse<any>) {
     useStore().loading = false;
-    console.dir('haha');
     if (response.status !== 200 && response.status !== 201 && response.status !== 204) {
         // useToast().error(`Request failed ${response.status} : ${response.statusText}`);
         return Promise.reject(response);

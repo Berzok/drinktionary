@@ -13,8 +13,11 @@
 
   <ion-content class="ion-padding" :scroll-y="true">
     <div class="modal-content">
-      <div>
-        <ion-img :src="'http://btc-vault/images/' + drink.image" class="aesthetic-effect-crt drink-image"></ion-img>
+      <div class="drink-image-citation">
+        <ion-img :src="'http://btc-vault/images/' + drink.image"
+                 class="aesthetic-effect-crt drink-image"
+                 @click="toggleFullscreen($event)"
+                 @dblclick="disableFullscreen($event)"/>
         <ion-label class="citation">{{ drink.description }}</ion-label>
       </div>
 
@@ -36,6 +39,7 @@ import {
     IonToolbar, modalController,
 } from '@ionic/vue';
 import { close } from 'ionicons/icons';
+import screenfull from 'screenfull';
 import DrinkInformations from '@/views/Drink/DrinkInformations.vue';
 
 const props = defineProps({
@@ -43,6 +47,14 @@ const props = defineProps({
 });
 
 const cancel = () => modalController.dismiss(null, 'cancel');
+
+const toggleFullscreen = (event: Event) => {
+    if (event.target instanceof Element) {
+        if (screenfull.isEnabled) {
+            screenfull.toggle(event.target);
+        }
+    }
+}
 </script>
 
 <style scoped>
@@ -53,6 +65,10 @@ const cancel = () => modalController.dismiss(null, 'cancel');
 }
 
 .drink-image {
+    max-width: 500px;
+}
+
+.drink-image-citation {
     max-width: 500px;
 }
 

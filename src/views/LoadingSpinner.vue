@@ -8,11 +8,14 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import { IonSpinner } from "@ionic/vue";
 import { useStore } from "@/store/mainStore";
 
 export default defineComponent({
     name: 'LoadingSpinner',
-    components: {},
+    components: {
+        IonSpinner
+    },
     computed: {
         isLoading() {
             return useStore().isLoading;
