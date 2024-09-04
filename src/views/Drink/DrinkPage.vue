@@ -16,8 +16,7 @@
       <div class="drink-image-citation">
         <ion-img :src="'http://btc-vault/images/' + drink.image"
                  class="aesthetic-effect-crt drink-image"
-                 @click="toggleFullscreen($event)"
-                 @dblclick="disableFullscreen($event)"/>
+                 @click="toggleFullscreen($event)"/>
         <ion-label class="citation">{{ drink.description }}</ion-label>
       </div>
 
@@ -66,6 +65,7 @@ const toggleFullscreen = (event: Event) => {
 
 .drink-image {
     max-width: 500px;
+    cursor: pointer;
 }
 
 .drink-image-citation {

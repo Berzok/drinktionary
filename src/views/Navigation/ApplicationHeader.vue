@@ -15,4 +15,8 @@
 import { IonButtons, IonHeader, IonMenuButton, IonToolbar } from '@ionic/vue';
 </script>
 
-<style scoped />
+<style scoped>
+.glitch {
+    user-select: none;
+}
+</style>

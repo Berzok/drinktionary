@@ -6,8 +6,8 @@
     </ion-item>
   </ion-list>
 
-  <ion-list :inset="true" class="instructions-list">
-    <ion-item v-for="etape in drink.etapes" :key="etape.step">
+  <ion-list :inset="true" lines="none" class="instructions-list">
+    <ion-item v-for="etape in drink.etapes" :key="etape.step" class="instruction-item">
       {{ etape.content }}
     </ion-item>
   </ion-list>
@@ -35,6 +35,11 @@ const props = defineProps({
 
     .instructions-list {
         margin-left: 0;
+        margin-right: 0;
+    }
+
+    .instruction-item {
+        margin-top: 0.75rem;
     }
 }
 
