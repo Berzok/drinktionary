@@ -1,6 +1,7 @@
 <template>
   <ion-app>
     <LoadingSpinner/>
+    <ApplicationMenu/>
     <ApplicationHeader/>
 
     <ion-content id="main-content" class="aesthetic-effect-crt">
@@ -18,11 +19,29 @@
 </template>
 
 <script setup lang="ts">
-import { IonApp, IonContent, IonFooter, IonRouterOutlet, IonTitle, IonToolbar } from '@ionic/vue';
+import {
+    IonApp,
+    IonContent,
+    IonFooter,
+    IonRouterOutlet,
+    IonTitle,
+    IonToolbar,
+    useBackButton,
+    useIonRouter
+} from '@ionic/vue';
 import ApplicationHeader from '@/views/Navigation/ApplicationHeader.vue';
+import ApplicationMenu from '@/views/Navigation/ApplicationMenu.vue';
 import LoadingSpinner from '@/views/LoadingSpinner.vue';
+import { App } from '@capacitor/app';
 
 const version = process.env.VITE_APP_VERSION;
+
+const ionRouter = useIonRouter();
+useBackButton(-1, () => {
+    if (!ionRouter.canGoBack()) {
+        App.exitApp();
+    }
+});
 </script>
 
 <style>

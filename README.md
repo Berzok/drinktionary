@@ -8,11 +8,6 @@ Drinktionary is the best way to look up and remember all the B.T.C cocktails rec
 Download the latest release. That's it.
 
 
-## Roadmap
-
-
-
-
 ## Version history
 
 ### 1.0

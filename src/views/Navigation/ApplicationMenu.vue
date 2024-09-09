@@ -9,13 +9,20 @@
       </ion-toolbar>
     </ion-header>
     <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon :icon="logIn" slot="start"></ion-icon>
+          <ion-label>Connexion</ion-label>
+        </ion-item>
+      </ion-list>
     </ion-content>
   </ion-menu>
 </template>
 
 <script setup lang="ts">
-import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonTitle, IonToolbar, IonIcon } from '@ionic/vue';
+import { logIn } from 'ionicons/icons';
 </script>
 
 
-<style scoped />
+<style scoped/>
