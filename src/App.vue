@@ -20,43 +20,43 @@
 
 <script setup lang="ts">
 import {
-    IonApp,
-    IonContent,
-    IonFooter,
-    IonRouterOutlet,
-    IonTitle,
-    IonToolbar,
-    useBackButton,
-    useIonRouter
+  IonApp,
+  IonContent,
+  IonFooter,
+  IonRouterOutlet,
+  IonTitle,
+  IonToolbar,
+  useBackButton,
+  useIonRouter
 } from '@ionic/vue';
 import ApplicationHeader from '@/views/Navigation/ApplicationHeader.vue';
 import ApplicationMenu from '@/views/Navigation/ApplicationMenu.vue';
 import LoadingSpinner from '@/views/LoadingSpinner.vue';
-import { App } from '@capacitor/app';
+import {App} from '@capacitor/app';
 
 const version = process.env.VITE_APP_VERSION;
 
 const ionRouter = useIonRouter();
 useBackButton(-1, () => {
-    if (!ionRouter.canGoBack()) {
-        App.exitApp();
-    }
+  if (!ionRouter.canGoBack()) {
+    App.exitApp();
+  }
 });
 </script>
 
 <style>
 @font-face {
-    font-family: "CyberpunkWaifus";
-    src: local("CyberpunkWaifus"),
-    url('./assets/fonts/CyberpunkWaifus.woff')
+  font-family: "CyberpunkWaifus";
+  src: local("CyberpunkWaifus"),
+  url('./assets/fonts/CyberpunkWaifus.woff2')
 }
 
 body {
-    --ion-font-family: CyberpunkWaifus, serif !important;
+  --ion-font-family: CyberpunkWaifus, serif !important;
 }
 
 ion-menu ion-content {
-    --background: var(--ion-item-background, var(--ion-background-color, #fff));
+  --background: var(--ion-item-background, var(--ion-background-color, #fff));
 }
 </style>
 <style lang="scss">
@@ -279,19 +279,19 @@ ion-menu ion-content {
 @keyframes clip {
   0% {
     clip-path: polygon(
-                    0 100%,
-                    100% 100%,
-                    100% 120%,
-                    0 120%
+            0 100%,
+            100% 100%,
+            100% 120%,
+            0 120%
     );
   }
 
   100% {
     clip-path: polygon(
-                    0 -20%,
-                    100% -20%,
-                    100% 0%,
-                    0 0
+            0 -20%,
+            100% -20%,
+            100% 0%,
+            0 0
     );
   }
 }
