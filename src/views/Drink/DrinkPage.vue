@@ -14,7 +14,7 @@
   <ion-content class="ion-padding" :scroll-y="true">
     <div class="modal-content">
       <div class="drink-image-citation">
-        <ion-img :src="'http://btc-vault/images/' + drink.image"
+        <ion-img :src="apiUrl + '/images/' + drink.image"
                  class="aesthetic-effect-crt drink-image"
                  @click="toggleFullscreen($event)"/>
         <ion-label class="citation">{{ drink.description }}</ion-label>
@@ -44,6 +44,8 @@ import DrinkInformations from '@/views/Drink/DrinkInformations.vue';
 const props = defineProps({
     drink: {type: Object, required: true},
 });
+
+const apiUrl = process.env.VITE_API_URL;
 
 const cancel = () => modalController.dismiss(null, 'cancel');
 

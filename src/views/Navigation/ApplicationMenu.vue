@@ -20,8 +20,20 @@
 </template>
 
 <script setup lang="ts">
-import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonTitle, IonToolbar, IonIcon } from '@ionic/vue';
-import { logIn } from 'ionicons/icons';
+import {
+  IonButtons,
+  IonContent,
+  IonHeader,
+  IonIcon,
+  IonItem,
+  IonLabel,
+  IonList,
+  IonMenu,
+  IonMenuButton,
+  IonTitle,
+  IonToolbar
+} from '@ionic/vue';
+import {logIn} from 'ionicons/icons';
 </script>
 
 
