@@ -29,8 +29,8 @@ import {
   IonRouterOutlet,
   IonTitle,
   IonRefresher,
-    IonRefresherContent,
-    IonToolbar, RefresherEventDetail,
+  IonRefresherContent,
+  IonToolbar, RefresherEventDetail,
   useBackButton,
   useIonRouter
 } from '@ionic/vue';
@@ -38,28 +38,29 @@ import ApplicationHeader from '@/views/Navigation/ApplicationHeader.vue';
 import ApplicationMenu from '@/views/Navigation/ApplicationMenu.vue';
 import LoadingSpinner from '@/views/LoadingSpinner.vue';
 import {App} from '@capacitor/app';
-import { useDrinkStore } from '@/store/drinkStore';
+import {useDrinkStore} from '@/store/drinkStore';
 
 const version = process.env.VITE_APP_VERSION;
 
 const ionRouter = useIonRouter();
 useBackButton(-1, () => {
-    if (!ionRouter.canGoBack()) {
-        App.exitApp();
-    }
+  if (!ionRouter.canGoBack()) {
+    App.exitApp();
+  }
 });
 
 interface RefresherCustomEvent extends CustomEvent {
-    detail: RefresherEventDetail;
-    target: HTMLIonRefresherElement;
+  detail: RefresherEventDetail;
+  target: HTMLIonRefresherElement;
 }
 
 const handleRefresh = (event: RefresherCustomEvent) => {
-    setTimeout(() => {
-        // Any calls to load data go here
-        useDrinkStore().fetchDrinks();
-        event.target.complete();
-    }, 2000);
+  setTimeout(() => {
+    // Any calls to load data go here
+    useDrinkStore().fetchDrinks().then(() => {
+      event.target.complete();
+    });
+  }, 2000);
 };
 </script>
 
