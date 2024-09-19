@@ -97,10 +97,6 @@ body {
 ion-menu ion-content {
     --background: var(--ion-item-background, var(--ion-background-color, #fff));
 }
-
-#status_modal {
-    //margin-top: 2rem;
-}
 </style>
 <style lang="scss">
 .glitch {
