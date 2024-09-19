@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
 import configureHTTPInterceptor from './config/configureHTTPInterceptor';
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
 import { IonicVue } from '@ionic/vue';
 
@@ -30,8 +31,8 @@ import 'aesthetic-css/aesthetic.css';
  * https://ionicframework.com/docs/theming/dark-mode
  */
 
-/* @import '@ionic/vue/css/palettes/dark.always.css'; */
-/* @import '@ionic/vue/css/palettes/dark.class.css'; */
+import '@ionic/vue/css/palettes/dark.always.css';
+import '@ionic/vue/css/palettes/dark.class.css';
 import '@ionic/vue/css/palettes/dark.system.css';
 
 /* Theme variables */
@@ -48,6 +49,7 @@ if (import.meta.hot) {
 }
 
 const pinia = createPinia();
+pinia.use(piniaPluginPersistedstate);
 configureHTTPInterceptor();
 
 const app = createApp(App)

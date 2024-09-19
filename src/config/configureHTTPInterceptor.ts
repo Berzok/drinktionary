@@ -8,7 +8,7 @@ function configure(configuration: AxiosRequestConfig) {
     useStore().loading = true;
     const conf = configuration;
     conf.baseURL = process.env.VITE_API_URL;
-    conf.timeout = 18000;
+    conf.timeout = 8000; //Timeout de 8 secondes
     return conf;
 }
 
@@ -31,8 +31,6 @@ function responseHandler(response: AxiosResponse<any>) {
 function responseErrorHandler(error: any) {
     let disableNotif = false;
     useStore().loading = false;
-    console.dir('Response error');
-    console.dir(error);
     if (error.response) {
         switch (error.response.status) {
             case 408:
@@ -40,8 +38,6 @@ function responseErrorHandler(error: any) {
                 break;
             case 401:
                 console.log('401');
-                /* store.dispatch('logout');
-                store.dispatch('resetCurrentUserProfile'); */
                 router.replace('/login');
                 disableNotif = true;
                 break;

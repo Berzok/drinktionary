@@ -1,10 +1,11 @@
 // stores/dataStore.js
 import { defineStore } from 'pinia';
 import drinkService from '@/service/drinkService';
+import { Drink } from '@/interfaces/Drink';
 
 export const useDrinkStore = defineStore('data', {
     state: () => ({
-        drinks: [],
+        drinks: [] as Array<Drink>,
     }),
     getters: {
         isLoaded: (state) => state.drinks.length > 0,
@@ -12,17 +13,17 @@ export const useDrinkStore = defineStore('data', {
     actions: {
         async fetchDrinks() {
             try {
-                const response = await drinkService.getAll();
-                this.drinks = response as [];
+                this.drinks = await drinkService.getAll();
+                return 'Cocktails mis à jour !';
             } catch (error) {
-                console.error(error);
+                throw new Error('Récupération impossible.');
             }
         },
         async init(): Promise<void> {
-            const items = await drinkService.getAll();
-            this.$state.drinks = items.toSorted((a: any, b: any) => {
-                return a.name.localeCompare(b.name);
-            }) as any;
+            this.$state.drinks = await drinkService.getAll();
         }
+    },
+    persist: {
+        pick: ['drinks']
     }
 });

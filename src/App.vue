@@ -23,60 +23,83 @@
 
 <script setup lang="ts">
 import {
-  IonApp,
-  IonContent,
-  IonFooter,
-  IonRouterOutlet,
-  IonTitle,
-  IonRefresher,
-  IonRefresherContent,
-  IonToolbar, RefresherEventDetail,
-  useBackButton,
-  useIonRouter
+    IonApp,
+    IonContent,
+    IonFooter,
+    IonRouterOutlet,
+    IonTitle,
+    IonRefresher,
+    IonRefresherContent,
+    IonToolbar, RefresherEventDetail,
+    useBackButton,
+    useIonRouter, toastController
 } from '@ionic/vue';
 import ApplicationHeader from '@/views/Navigation/ApplicationHeader.vue';
 import ApplicationMenu from '@/views/Navigation/ApplicationMenu.vue';
 import LoadingSpinner from '@/views/LoadingSpinner.vue';
-import {App} from '@capacitor/app';
-import {useDrinkStore} from '@/store/drinkStore';
+import { App } from '@capacitor/app';
+import { useDrinkStore } from '@/store/drinkStore';
 
 const version = process.env.VITE_APP_VERSION;
 
 const ionRouter = useIonRouter();
 useBackButton(-1, () => {
-  if (!ionRouter.canGoBack()) {
-    App.exitApp();
-  }
+    if (!ionRouter.canGoBack()) {
+        App.exitApp();
+    }
 });
 
 interface RefresherCustomEvent extends CustomEvent {
-  detail: RefresherEventDetail;
-  target: HTMLIonRefresherElement;
+    detail: RefresherEventDetail;
+    target: HTMLIonRefresherElement;
 }
 
 const handleRefresh = (event: RefresherCustomEvent) => {
-  setTimeout(() => {
-    // Any calls to load data go here
-    useDrinkStore().fetchDrinks().then(() => {
-      event.target.complete();
-    });
-  }, 2000);
+    setTimeout(async () => {
+        // Any calls to load data go here
+        try {
+            const response = await useDrinkStore().fetchDrinks();
+            await presentToast(response, 'success');
+            await event.target.complete();
+        } catch (error) {
+            const e: Error = error as Error;
+            await presentToast(e.message, 'danger');
+            await event.target.complete();
+        }
+    }, 2000);
 };
+
+const presentToast = async (message: string, colour: 'success' | 'danger') => {
+    console.dir(colour);
+    const toast = await toastController.create({
+        message: message,
+        color: colour,
+        duration: 2200,
+        position: 'top',
+        id: 'status_modal'
+    });
+
+    await toast.present();
+}
 </script>
 
 <style>
 @font-face {
-  font-family: "CyberpunkWaifus";
-  src: local("CyberpunkWaifus"),
-  url('./assets/fonts/CyberpunkWaifus.woff2')
+    font-family: "CyberpunkWaifus";
+    src: local("CyberpunkWaifus"),
+    url('./assets/fonts/CyberpunkWaifus.woff2')
 }
 
 body {
-  --ion-font-family: CyberpunkWaifus, serif !important;
+    --ion-font-family: CyberpunkWaifus, serif !important;
 }
 
 ion-menu ion-content {
-  --background: var(--ion-item-background, var(--ion-background-color, #fff));
+    --background: var(--ion-item-background, var(--ion-background-color, #fff));
+}
+
+#status_modal {
+    //margin-top: 2rem;
 }
 </style>
 <style lang="scss">
@@ -299,19 +322,19 @@ ion-menu ion-content {
 @keyframes clip {
   0% {
     clip-path: polygon(
-            0 100%,
-            100% 100%,
-            100% 120%,
-            0 120%
+                    0 100%,
+                    100% 100%,
+                    100% 120%,
+                    0 120%
     );
   }
 
   100% {
     clip-path: polygon(
-            0 -20%,
-            100% -20%,
-            100% 0%,
-            0 0
+                    0 -20%,
+                    100% -20%,
+                    100% 0%,
+                    0 0
     );
   }
 }

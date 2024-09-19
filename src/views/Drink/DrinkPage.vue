@@ -14,7 +14,7 @@
   <ion-content class="ion-padding" :scroll-y="true">
     <div class="modal-content">
       <div class="drink-image-citation">
-        <ion-img :src="apiUrl + '/images/' + drink.image"
+        <ion-img :src="apiUrl + '/uploads/images/' + drink.image"
                  class="aesthetic-effect-crt drink-image"
                  @click="toggleFullscreen($event)"/>
         <ion-label class="citation">{{ drink.description }}</ion-label>
