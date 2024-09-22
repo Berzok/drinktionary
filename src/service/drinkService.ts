@@ -14,9 +14,10 @@ const drinkService = {
     async getAll(): Promise<Drink[]> {
         return axios.get(`${API_URL}/all`)
             .then(response => {
-                return response.data.toSorted((a: any, b: any) => {
+                const sortedDrinks: Drink[] = response.data.toSorted((a: any, b: any) => {
                     return a.name.localeCompare(b.name);
                 }) as Array<Drink>;
+                return sortedDrinks
             })
             .catch(error => {
                 console.error('Erreur lors de la récupération des données:', error);
