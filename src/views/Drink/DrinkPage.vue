@@ -14,7 +14,7 @@
   <ion-content class="ion-padding" :scroll-y="true">
     <div class="modal-content">
       <div class="drink-image-citation">
-        <ion-img :src="apiUrl + '/uploads/images/' + drink.image"
+        <ion-img :src="imageSrc"
                  class="aesthetic-effect-crt drink-image"
                  @click="toggleFullscreen($event)"/>
         <ion-label class="citation">{{ drink.description }}</ion-label>
@@ -40,12 +40,39 @@ import {
 import { close } from 'ionicons/icons';
 import screenfull from 'screenfull';
 import DrinkInformations from '@/views/Drink/DrinkInformations.vue';
+import { onMounted, PropType, ref } from 'vue';
+import { Drink } from '@/interfaces/Drink';
+import { useStore } from '@/store/mainStore';
+import cacheService from '@/service/cacheService';
+import placeholder from '@/assets/images/placeholder.svg';
 
 const props = defineProps({
-    drink: {type: Object, required: true},
+    drink: {
+        type: Object as PropType<Drink>,
+        required: true
+    },
 });
 
 const apiUrl = process.env.VITE_API_URL;
+
+const imageSrc = ref('');
+
+const loadImage = async (drink: Drink) => {
+    try {
+        return await cacheService.loadCachedImage(drink.name + '_image');
+    } catch (e) {
+        if (useStore().network) {
+            return apiUrl + '/uploads/images/' + drink.image;
+        } else {
+            return placeholder;
+        }
+    }
+}
+
+// Charger l'icône lors du montage du composant
+onMounted(async () => {
+    imageSrc.value = await loadImage(props.drink);
+});
 
 const cancel = () => modalController.dismiss(null, 'cancel');
 

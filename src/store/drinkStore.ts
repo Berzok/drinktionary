@@ -2,6 +2,8 @@
 import { defineStore } from 'pinia';
 import drinkService from '@/service/drinkService';
 import { Drink } from '@/interfaces/Drink';
+import cacheService from '@/service/cacheService';
+import { useStore } from '@/store/mainStore';
 
 export const useDrinkStore = defineStore('data', {
     state: () => ({
@@ -14,13 +16,28 @@ export const useDrinkStore = defineStore('data', {
         async fetchDrinks() {
             try {
                 this.drinks = await drinkService.getAll();
+                useStore().network = true;
                 return 'Cocktails mis à jour !';
             } catch (error) {
+                useStore().network = false;
                 throw new Error('Récupération impossible.');
             }
         },
+        cacheResults() {
+            console.log('Mise en cache des images');
+            this.drinks.forEach(async (drink: Drink) => {
+                await cacheService.cacheIcon(drink, `${drink.id}_icon`);
+                await cacheService.cacheImage(drink, `${drink.id}_image`);
+            });
+        },
         async init(): Promise<void> {
-            this.$state.drinks = await drinkService.getAll();
+            console.dir('Init');
+            try {
+                this.$state.drinks = await drinkService.getAll();
+                this.cacheResults();
+            } catch (e) {
+                useStore().network = false;
+            }
         }
     },
     persist: {

@@ -4,6 +4,7 @@ const useStore = defineStore('main', {
     state: () => ({
         api: process.env.VITE_API_URL as string,
         loading: false,
+        network: true
     }),
     getters: {
         isLoading: (state) => state.loading
