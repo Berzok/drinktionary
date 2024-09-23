@@ -22,7 +22,7 @@ const loadIcon = async (drink: Drink) => {
         return await cacheService.loadCachedIcon(drink.id + '_icon');
     } catch (e) {
         console.error('Error while loading cached icon');
-        if (useStore().network) {
+        if ((await useStore().getNetworkStatus).connected) {
             return apiUrl + '/uploads/images/' + drink.icon;
         } else {
             return placeholder;

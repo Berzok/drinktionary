@@ -61,7 +61,7 @@ const loadImage = async (drink: Drink) => {
     try {
         return await cacheService.loadCachedImage(drink.id + '_image');
     } catch (e) {
-        if (useStore().network) {
+        if ((await useStore().getNetworkStatus).connected) {
             return apiUrl + '/uploads/images/' + drink.image;
         } else {
             return placeholder;

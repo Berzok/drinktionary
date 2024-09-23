@@ -1,4 +1,5 @@
 import { acceptHMRUpdate, defineStore } from 'pinia';
+import { Network } from '@capacitor/network';
 
 const useStore = defineStore('main', {
     state: () => ({
@@ -7,7 +8,8 @@ const useStore = defineStore('main', {
         network: true
     }),
     getters: {
-        isLoading: (state) => state.loading
+        isLoading: (state) => state.loading,
+        getNetworkStatus: async () => await Network.getStatus()
     },
     actions: {},
 });
