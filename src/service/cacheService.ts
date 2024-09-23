@@ -55,7 +55,7 @@ const cacheService = {
         }
     },
 
-    async loadCachedIcon(fileName: string): Promise<string | null> {
+    async loadCachedIcon(fileName: string): Promise<string> {
         try {
             const file = await Filesystem.readFile({
                 path: `icons/${fileName}`,
@@ -69,8 +69,9 @@ const cacheService = {
         }
     },
 
-    async loadCachedImage(fileName: string): Promise<string | null> {
+    async loadCachedImage(fileName: string): Promise<string> {
         try {
+            console.dir(fileName);
             const file = await Filesystem.readFile({
                 path: `images/${fileName}`,
                 directory: Directory.Cache,

@@ -8,7 +8,7 @@ function configure(configuration: AxiosRequestConfig) {
     useStore().loading = true;
     const conf = configuration;
     conf.baseURL = process.env.VITE_API_URL;
-    conf.timeout = 4000; //Timeout de 8 secondes
+    conf.timeout = 8000; //Timeout de 8 secondes
     return conf;
 }
 

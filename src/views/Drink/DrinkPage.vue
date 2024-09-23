@@ -59,7 +59,7 @@ const imageSrc = ref('');
 
 const loadImage = async (drink: Drink) => {
     try {
-        return await cacheService.loadCachedImage(drink.name + '_image');
+        return await cacheService.loadCachedImage(drink.id + '_image');
     } catch (e) {
         if (useStore().network) {
             return apiUrl + '/uploads/images/' + drink.image;

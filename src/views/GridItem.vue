@@ -7,7 +7,6 @@ import { useStore } from '@/store/mainStore';
 import { Drink } from '@/interfaces/Drink';
 import placeholder from '@/assets/images/placeholder.svg';
 
-const message = ref('This modal example uses the modalController to present and dismiss modals.');
 const apiUrl = process.env.VITE_API_URL;
 
 const props = defineProps({
@@ -52,12 +51,6 @@ const openModal = async () => {
     });
 
     modal.present();
-
-    const {data, role} = await modal.onWillDismiss();
-
-    if (role === 'confirm') {
-        message.value = `Hello, ${data}!`;
-    }
 };
 </script>
 
