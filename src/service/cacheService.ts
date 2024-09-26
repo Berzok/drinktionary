@@ -71,7 +71,6 @@ const cacheService = {
 
     async loadCachedImage(fileName: string): Promise<string> {
         try {
-            console.dir(fileName);
             const file = await Filesystem.readFile({
                 path: `images/${fileName}`,
                 directory: Directory.Cache,
@@ -97,6 +96,25 @@ const cacheService = {
             reader.readAsDataURL(blob);
         });
     },
+
+    /**
+     * Vérifie si un fichier particulier est en cache
+     * @param fileName
+     * @param type
+     */
+    async isCached(fileName: string, type: 'icon' | 'image'): Promise<boolean> {
+        try {
+            const path = `${type === 'icon' ? 'icons' : 'images'}/${fileName}`;
+            await Filesystem.readFile({
+                path: path,
+                directory: Directory.Cache,
+            });
+            return true; // Le fichier existe en cache
+        } catch (e) {
+            return false; // Le fichier n'existe pas en cache
+        }
+    }
+
 
 
 };
