@@ -1,0 +1,153 @@
+/* Palette Vaporwave */
+:root {
+  --vaporwave-background: linear-gradient(135deg, #ffb6c1 0%, #87ceeb 100%);
+  --vaporwave-accent: #ff71ce;
+  --vaporwave-neon: #ff00ff;
+  --vaporwave-secondary: #00ffff;
+  --vaporwave-glow: rgba(255, 0, 255, 0.5);
+  --vaporwave-dark: #2e2e2e;
+  --vaporwave-text-color: #ffffff;
+  --vaporwave-text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  --vaporwave-button-gradient: linear-gradient(145deg, #ff00ff 0%, #00ffff 100%);
+  --vaporwave-button-hover: #f72585;
+  --vaporwave-glass-background: rgba(255, 255, 255, 0.15);
+  --vaporwave-border-radius: 25px;
+}
+
+/* Body and background */
+body {
+  background: var(--vaporwave-background);
+  color: var(--vaporwave-text-color);
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: var(--vaporwave-text-shadow);
+}
+
+/* Ionic headers */
+ion-header {
+  background: var(--vaporwave-background);
+}
+
+ion-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--vaporwave-accent);
+  text-shadow: var(--vaporwave-text-shadow);
+}
+
+/* Buttons */
+ion-button {
+  background: var(--vaporwave-button-gradient);
+  border-radius: var(--vaporwave-border-radius);
+  color: var(--vaporwave-text-color);
+  text-transform: uppercase;
+  box-shadow: 0px 4px 15px var(--vaporwave-neon);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+ion-button:hover {
+  background: var(--vaporwave-button-hover);
+  box-shadow: 0px 8px 30px var(--vaporwave-neon);
+}
+
+/* Text Inputs */
+ion-input {
+  background: var(--vaporwave-glass-background);
+  border-radius: var(--vaporwave-border-radius);
+  color: var(--vaporwave-text-color);
+  box-shadow: 0 0 10px var(--vaporwave-neon);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+ion-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: var(--vaporwave-text-shadow);
+}
+
+/* Cards */
+ion-card {
+  background: var(--vaporwave-glass-background);
+  backdrop-filter: blur(10px);
+  border-radius: var(--vaporwave-border-radius);
+  box-shadow: 0 8px 30px var(--vaporwave-dark);
+  padding: 20px;
+  margin: 20px;
+}
+
+ion-card-header {
+  color: var(--vaporwave-accent);
+  text-shadow: var(--vaporwave-text-shadow);
+  font-size: 1.5rem;
+}
+
+ion-card-content {
+  color: var(--vaporwave-text-color);
+  font-size: 1rem;
+  text-shadow: var(--vaporwave-text-shadow);
+}
+
+/* Neon Glow Text */
+.neon-text {
+  color: var(--vaporwave-neon);
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Neon Borders */
+.neon-border {
+  border: 2px solid var(--vaporwave-accent);
+  border-radius: var(--vaporwave-border-radius);
+  padding: 10px;
+  box-shadow: 0 0 10px var(--vaporwave-accent);
+}
+
+/* Floating buttons */
+ion-fab-button {
+  background: var(--vaporwave-button-gradient);
+  color: var(--vaporwave-text-color);
+  box-shadow: 0px 4px 20px var(--vaporwave-neon);
+}
+
+ion-fab-button:hover {
+  background: var(--vaporwave-button-hover);
+  box-shadow: 0px 8px 40px var(--vaporwave-neon);
+}
+
+/* Footer */
+ion-footer {
+  background: var(--vaporwave-background);
+  border-top: 2px solid var(--vaporwave-neon);
+  box-shadow: 0px -4px 10px var(--vaporwave-neon);
+}
+
+/* Animations */
+@keyframes neon-pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px var(--vaporwave-neon);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--vaporwave-neon);
+  }
+}
+
+.pulsing-neon {
+  animation: neon-pulse 1.5s infinite;
+}
+
+/* List items */
+ion-item {
+  background: var(--vaporwave-glass-background);
+  border-radius: var(--vaporwave-border-radius);
+  margin: 5px 0;
+  padding: 10px;
+  box-shadow: 0 0 10px var(--vaporwave-dark);
+}
+
+ion-item:hover {
+  box-shadow: 0 0 20px var(--vaporwave-neon);
+}
+
