@@ -1,6 +1,6 @@
 <template>
   <ion-page class="content-wrapper">
-    <ion-item>
+    <ion-item class="search-item">
       <ion-input placeholder="Recherche" v-model="searchTerm">
         <ion-icon slot="start" :icon="searchOutline"></ion-icon>
       </ion-input>
@@ -79,7 +79,7 @@ export default defineComponent({
 
 .content-wrapper {
   display: grid;
-  grid-template-rows: 10% 1fr 10%;
+  grid-template-rows: 7% 1fr 10%;
   overflow: scroll;
 }
 
