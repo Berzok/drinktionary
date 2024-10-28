@@ -5,9 +5,6 @@
     <ApplicationHeader/>
 
     <ion-content id="main-content" class="aesthetic-effect-crt">
-      <ion-refresher slot="fixed" @ionRefresh="handleRefresh($event)">
-        <ion-refresher-content></ion-refresher-content>
-      </ion-refresher>
       <ion-router-outlet class="ion-padding"></ion-router-outlet>
     </ion-content>
 
@@ -28,17 +25,14 @@ import {
     IonFooter,
     IonRouterOutlet,
     IonTitle,
-    IonRefresher,
-    IonRefresherContent,
-    IonToolbar, RefresherEventDetail,
+    IonToolbar,
     useBackButton,
-    useIonRouter, toastController
+    useIonRouter
 } from '@ionic/vue';
 import ApplicationHeader from '@/views/Navigation/ApplicationHeader.vue';
 import ApplicationMenu from '@/views/Navigation/ApplicationMenu.vue';
 import LoadingSpinner from '@/views/LoadingSpinner.vue';
 import { App } from '@capacitor/app';
-import { useDrinkStore } from '@/store/drinkStore';
 
 const version = process.env.VITE_APP_VERSION;
 
@@ -48,39 +42,6 @@ useBackButton(-1, () => {
         App.exitApp();
     }
 });
-
-interface RefresherCustomEvent extends CustomEvent {
-    detail: RefresherEventDetail;
-    target: HTMLIonRefresherElement;
-}
-
-const handleRefresh = (event: RefresherCustomEvent) => {
-    setTimeout(async () => {
-        // Any calls to load data go here
-        try {
-            const response = await useDrinkStore().fetchDrinks();
-            await presentToast(response, 'success');
-            await event.target.complete();
-        } catch (error) {
-            const e: Error = error as Error;
-            await presentToast(e.message, 'danger');
-            await event.target.complete();
-        }
-    }, 2000);
-};
-
-const presentToast = async (message: string, colour: 'success' | 'danger') => {
-    console.dir(colour);
-    const toast = await toastController.create({
-        message: message,
-        color: colour,
-        duration: 2200,
-        position: 'top',
-        id: 'status_modal'
-    });
-
-    await toast.present();
-}
 </script>
 
 <style>
