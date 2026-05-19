@@ -79,7 +79,7 @@ const cacheService = {
         } catch (e) {
             // Gérer l'erreur si l'image n'est pas disponible
             console.dir(e);
-            throw Error;
+            throw new Error();
         }
     },
 

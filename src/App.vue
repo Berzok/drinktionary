@@ -60,6 +60,8 @@ ion-menu ion-content {
 }
 </style>
 <style lang="scss">
+@use 'sass:math';
+
 .glitch {
   position: relative;
   color: #fff;
@@ -246,7 +248,7 @@ ion-menu ion-content {
   @for $i from 1 through 10 {
     &:nth-child(#{$i}) {
       animation: clip 3000ms $i * -300ms linear infinite,
-      glitch#{$i} 1500ms random(3000) * -1ms linear infinite;
+      glitch#{$i} 1500ms math.random(3000) * -1ms linear infinite;
 
       @keyframes glitch#{$i} {
         0% {
@@ -257,15 +259,15 @@ ion-menu ion-content {
           color: #fff;
         }
         85% {
-          transform: translateX(random(10) - 5px);
+          transform: translateX(math.random(10) - 5px);
           color: #4E9A26;
         }
         90% {
-          transform: translateX(random(10) - 5px);
+          transform: translateX(math.random(10) - 5px);
           color: #AC1212;
         }
         95% {
-          transform: translateX(random(10) - 5px);
+          transform: translateX(math.random(10) - 5px);
           color: #fff;
         }
         100% {

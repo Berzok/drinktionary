@@ -1,9 +1,9 @@
-import Axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
+import Axios, { AxiosRequestConfig, AxiosResponse, InternalAxiosRequestConfig } from 'axios';
 // import { useToast } from 'vue-toast-notification';
 import router from '@/router/index';
 import { useStore } from '@/store/mainStore';
 
-function configure(configuration: AxiosRequestConfig) {
+function configure(configuration: InternalAxiosRequestConfig) {
     // TODO add an option to disable by default loading
     useStore().loading = true;
     const conf = configuration;
@@ -68,7 +68,7 @@ function responseErrorHandler(error: any) {
 
 export default function configureHTTPInterceptor(): void {
     Axios.interceptors.request.use(
-        (config) => configure(config),
+        (config: InternalAxiosRequestConfig) => configure(config),
         (error) => requestErrorHandler(error),
     );
 
