@@ -72,6 +72,9 @@ importers:
       '@capacitor/cli':
         specifier: 6.1.2
         version: 6.1.2
+      '@types/node':
+        specifier: ^25.9.0
+        version: 25.9.0
       '@vitejs/plugin-legacy':
         specifier: ^8.0.2
         version: 8.0.2(terser@5.47.1)(vite@8.0.13(@types/node@25.9.0)(sass@1.99.0)(terser@5.47.1))
